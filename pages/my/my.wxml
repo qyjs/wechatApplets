@@ -1,0 +1,8 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName?userInfo.nickName:"未登录"}}</text>
+  </view>
+    <button hidden="{{userInfo.nickName}}" class="login-btn" bindtap="login">登录</button>  
+</view>

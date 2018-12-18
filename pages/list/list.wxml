@@ -1,0 +1,11 @@
+<import src="../template/movieThumb.wxml" />
+<scroll-view class="">
+  <view class="film-container container">
+    <template is="movieThumb" wx:for-items="{{films}}"  wx:for-item="film" wx:key="id" data="{{...film}}">   
+      </template>
+  </view>
+  <view class="weui-loadmore" hidden="{{!hasMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">加载更多</view>
+  </view> 
+</scroll-view>
